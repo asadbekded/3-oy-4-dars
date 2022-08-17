@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+   <title>Asadbek</title>
+</head>
+<body>
+   <main>
+      <section>
+         <div class="container">
+            <div class="text-center text-dark pt-4 mb-4"><h1>Movies catalog</h1></div>
+            <div class="row">
+               <div class="col-4 me-5">
+                  <div> 
+                     <form action="https://echo.htmlacademy.ru" method="post">
+                        
+                        <div class="mb-3">
+                           <label for="user-name" class="form-label visually-hidden"></label>
+                           <input type="text" class="form-control" name="user-name" id="user-name" placeholder="Name" required>
+                        </div>
+                        <div class="mb-3">
+                           <label for="user-surname" class="form-label visually-hidden"></label>
+                           <input type="text" class="form-control" name="user-surname" id="user-surname" placeholder="Surname" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                           <label for="user-email" class="form-label visually-hidden"></label>
+                           <input type="email" class="form-control" id="user-email" name="user-email" placeholder="Email" required>
+                        </div>
+                        
+                        <label for="exampleDataList" class="form-label visually-hidden"></label>
+                        <input class="form-control mb-3" list="datalistOptions" name="user-location" id="exampleDataList" placeholder="Yashash Joyingiz" required>
+                        <datalist id="datalistOptions">
+                           <option value="Toshkent">
+                           <option value="Samarqand">
+                           <option value="Andijon">
+                           <option value="Farg'ona">
+                           <option value="Namangan">
+                           <option value="Xorazm">
+                           <option value="Buxoro">
+                           <option value="Qashqadaryo">
+                           <option value="Surxandaryo">
+                           <option value="Nukus">
+                        </datalist>
+                        
+                        
+
+                        <select class="form-select mb-3" aria-label="Default select example" name="user-kino">
+                           <option selected>Kino Turi</option>
+                           <option value="qasoskorlar">Qasoskorlar</option>
+                           <option value="chuqur">Chuqur</option>
+                           <option value="ichkarida">Ichkarida</option>
+                           <option value="qashqirlar makoni">Qashqirlar Makoni</option>
+                        </select>
+                        
+                        <button type="submit" class="btn btn-primary col-12">Send</button>
+                     </form>
+                  </div>
+
+                  <div>
+                     <div class="mt-4 mb-4"><h2>Bookmarked movies</h2></div>
+
+                     <ul class="list-group">
+                        <li class="list-group-item d-block h5 pt-2 pb-3 mb-0">Avengers:Infinity War <button type="button" class="btn btn-danger d-block mt-2">Remove</button></li>
+                        <li class="list-group-item d-block h5 pt-2 pb-3 mb-0">The Avengers <button type="button" class="btn btn-danger d-block mt-2">Remove</button></li>
+                        <li class="list-group-item d-block h5 pt-2 pb-3 mb-0">12 Years a Slave <button type="button" class="btn btn-danger d-block mt-2">Remove</button></li>
+                      </ul>
+                  </div>
+               </div>
+
+               <div class="col-7">
+                  <div>
+                     <h2 class="mb-3">Search results: 39</h2>
+
+                     <div class="alert alert-info h5 mb-4" role="alert">
+                        Use the form on the left to search for a movie
+                      </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+</body>
+</html>
